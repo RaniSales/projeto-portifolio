@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* inicio- formatando a scroollbar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blueviolet white;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color:white;
+
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:blueviolet;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+  /* fim- formatando a scroollbar*/
+
+ body{
+    background-color:#130c24;
+    position: relative;
+    border: 1px solid blueviolet;
+}
+
+.roxo{
+    color:blueviolet;
+}
+
+h2{
+    color: blueviolet;
+}
+
+/* inicio formatando menu de navegação*/
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    padding-right: 3.1em;
+    float: right;     
+}
+
+nav{
+    height: 3.1em;
+    border: none;
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+}
+
+nav a:hover{
+    color:blueviolet;
+}
+
+nav a:active{
+    color:rgba(138,43,226,0.5);
+}
+/* fim formatando menu de navegação*/
+
+
+/* inicio formatando quem sou*/
+div p, h1,h2{
+    width: 400px;
+    margin-left: 120px;
+    margin-right: 200px;  
+    transition: transform 4s;
+    transform: translateX(10px) scale(1.5) infinite alternate;
+    padding:25px;
+}
+
+div h2{
+    padding-top: 70px;
+}
+
+div p{
+    margin-bottom: 155px;
+}
+
+.quem-sou{
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+}
+
+.quem-sou img{
+    width: 500px;
+    float: right;
+    margin-top: -200px;
+    animation: balao 4s infinite alternate; 
+
+}
+
+@keyframes balao{
+    from{
+        transform: translateY(500px);
+    }to{
+        transform: translateY(0);
+    }
+
+}/* fim formatando quem sou*/
+
+
+/* inicio formatando conhecimentos*/
+.conhecimentos img{
+    position: absolute;
+    animation: astronauta-lendo 3s infinite alternate; 
+    
+}
+
+@keyframes astronauta-lendo{
+    from{
+        transform: translateX(20px);
+    }to{
+        transform: translateX(0);
+    }
+
+}
+
+.conhecimentos h2{
+    margin: 0 42%;
+    margin-bottom: 15px;
+}
+
+.conhecimentos p{
+    text-align: center;
+}
+
+.conhecimentos ol{
+    margin: 0 42%;
+    list-style: disc;
+    margin-top: 30px;
+
+}/* fim formatando conhecimentos*/
+
+
+/* inicio formatando linguagens*/
+.linguagens{
+    text-align: center;
+    margin-bottom: 100px;
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    padding: 30px;
+}
+
+.linguagens img{
+    margin-top: 15px;
+}/* fim formatando linguagens*/
+
+
+/* inicio formatando projetos*/
+.projetos-h2{
+    margin-bottom:50px;
+}
+
+.projetos img{
+    width: 100vw;
+    height: 200px;
+    margin: 30px;
+    border: 1px solid blueviolet;
+}
+
+.projetos img:hover{
+    transition: 2s;
+    transform: translateX(10px) scale(1.2);
+}
+.projetos{
+    display: flex;
+    overflow-x: auto;
+    padding: 30px;
+}
+
+.astrounauta-trabalhando img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: -200px;  
+    animation: astrounauta-trabalhando 7s infinite alternate; 
+}
+
+@keyframes astrounauta-trabalhando{
+    from{
+        transform: translateX(-700px);
+    }to{
+        transform: translateX(0);
+    }
+
+}/* fim formatando projetos*/
+
+
+/* inicio formatando contatos*/
+.contato{
+    margin-top: 50px;
+}
+/*fim formatando contatos*/
+
+/*inicio formatando rodape*/
+.rodape{
+    background: rgb(0, 0, 0,0.5);
+    text-align: center;
+    padding: 10px 5px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+.rodape img{
+    width: 32px;
+    margin: 10px;
+}
+/*fim formatando rodape*/
