@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+body{
+    width: 100vw;
+}
 
 /* inicio- formatando a scroollbar*/
 * {
@@ -46,19 +49,18 @@ h2{
 }
 
 /* inicio formatando menu de navegação*/
+
+nav{
+    display: flex;
+    justify-content:space-around; 
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+}
+
 nav a{
     text-decoration: none;
     color: white;
-    font-size: 1em;
-    padding: 1em;
-    padding-right: 3.1em;
-    float: right;     
-}
-
-nav{
-    height: 3.1em;
-    border: none;
-    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    display: flex;
+    align-items: center;  
 }
 
 nav a:hover{
@@ -67,25 +69,28 @@ nav a:hover{
 
 nav a:active{
     color:rgba(138,43,226,0.5);
+    
 }
 /* fim formatando menu de navegação*/
 
 
 /* inicio formatando quem sou*/
 div p, h1,h2{
-    width: 400px;
-    margin-left: 120px;
-    margin-right: 200px;  
+    max-width: 600px;
+    margin-left: 20px;
     transition: transform 4s;
     transform: translateX(10px) scale(1.5) infinite alternate;
     padding:25px;
 }
 
-div h2{
-    padding-top: 70px;
+div h2 , p{
+    margin-left: 4em;
+    margin-top: 1em;
 }
 
 div p{
+    margin-top: 2em;
+    margin-left: 6em;
     margin-bottom: 155px;
 }
 
@@ -96,7 +101,7 @@ div p{
 .quem-sou img{
     width: 500px;
     float: right;
-    margin-top: -200px;
+    margin-top: -120px;
     animation: balao 4s infinite alternate; 
 
 }
@@ -129,7 +134,7 @@ div p{
 
 .conhecimentos h2{
     margin: 0 42%;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .conhecimentos p{
@@ -147,7 +152,7 @@ div p{
 /* inicio formatando linguagens*/
 .linguagens{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 8em;
     border-bottom: 1px solid rgba(114, 114, 126, 0.2);
     padding: 30px;
 }
@@ -162,20 +167,20 @@ div p{
     margin-bottom:50px;
 }
 
-.projetos img{
-    width: 100vw;
+.projetos img, video{
+    width: 400px;
     height: 200px;
     margin: 30px;
     border: 1px solid blueviolet;
 }
 
-.projetos img:hover{
+.projetos img:hover, video:hover{
     transition: 2s;
     transform: translateX(10px) scale(1.2);
 }
 .projetos{
     display: flex;
-    overflow-x: auto;
+    overflow-x:auto;
     padding: 30px;
 }
 
